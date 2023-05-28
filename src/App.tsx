@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Home from './Home';
 import Site from './Site';
+import Trial from './Trial';
 
 const App: React.FC = () => {
     return (
@@ -13,6 +14,8 @@ const App: React.FC = () => {
             <Routes>
                 <Route path="/:domain" element={ <Site /> } />
                 <Route path="/" element={ <Home /> } />
+                <Route path="/trial" element={<Trial />} />
+
             </Routes>
         </Router>
     );
